@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row>div {
+    border: 1px solid var(--color-black);
+    margin: 0.4rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    text-align: left;
+    display: flex;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.row>div:nth-child(1) {
+    flex: 0 0 50%;
+    text-align: left;
+}
+
+.row>div:nth-child(2) {
+    flex: 0 0 15%;
+}
+
+.row>div:nth-child(3) {
+    flex: 0 0 15%;
+}
+
+.row>img {
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+.row>img:active {
+    scale: 1.5;
+}

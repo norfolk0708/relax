@@ -1,0 +1,12 @@
+.list {
+    border: 0.1rem solid #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    width: 70rem;
+    color: var(--color-grey);
+    background-color: var(--color-grafit);
+    font-size: 2rem;
+    box-shadow: var(--greenShadow);
+    animation: var(--pulsateBorder);
+}

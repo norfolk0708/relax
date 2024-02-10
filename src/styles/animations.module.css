@@ -1,0 +1,35 @@
+@keyframes pulsateBorder {
+
+    0%,
+    12%,
+    23%,
+    100% {
+        box-shadow:
+            0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem var(--color-green),
+            0 0 0.8rem var(--color-green),
+            0 0 2.8rem var(--color-green),
+            inset 0 0 1rem var(--color-green);
+    }
+
+    10%,
+    13%,
+    60%,
+    62%,
+    64% {
+        box-shadow:
+            0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem var(--color-green),
+            0 0 0.8rem var(--color-green),
+            0 0 2.8rem var(--color-green),
+            inset 0 0 1.3rem var(--color-green);
+    }
+
+    11%,
+    61%,
+    63% {
+        box-shadow: none;
+    }
+}

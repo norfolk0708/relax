@@ -1,0 +1,14 @@
+.header {
+    height: 22vh;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    box-shadow:
+        0 0 .2rem #fff,
+        0 0 2rem var(--color-green),
+        0 0 0.8rem var(--color-green),
+        0 0 2.8rem var(--color-green);
+    z-index: 20;
+}

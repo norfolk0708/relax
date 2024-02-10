@@ -1,0 +1,16 @@
+.container {
+    margin: 4rem;
+    padding: 1rem;
+    box-shadow: var(--greenShadow);
+    animation: var(--pulsateBorder);
+    border-radius: 1rem;
+    background: var(--color-grafit);
+}
+
+.form {
+    display: flex;
+}
+
+.form div:nth-child(n) {
+    margin: 1rem;
+}

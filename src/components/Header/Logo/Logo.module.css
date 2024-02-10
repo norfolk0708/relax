@@ -1,0 +1,88 @@
+@font-face {
+    font-family: neon;
+    src: url("../../../fonts/neon.otf") format("opentype");
+}
+
+.container {
+    /*background-color: #010a01;*/
+    /*height: 2rem;
+    width: 5rem;*/
+}
+
+.bord {
+    background-color: #010a01;
+    text-align: center;
+    font-family: "neon", sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    animation: plugin 3s ease-in normal, pulsateText 10s 3s infinite alternate, var(--pulsateBorder);
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.5rem 2.5rem;
+    margin: 1.5rem;
+}
+
+@keyframes pulsateText {
+    100% {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px var(--color-green),
+            0 0 80px var(--color-green),
+            0 0 90px var(--color-green),
+            0 0 100px var(--color-green),
+            0 0 150px var(--color-green);
+        color: #fff;
+    }
+
+    30%,
+    34%,
+    0% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px var(--color-green),
+            0 0 45px var(--color-green),
+            0 0 55px var(--color-green),
+            0 0 70px var(--color-green),
+            0 0 80px var(--color-green);
+        color: #fff;
+    }
+
+    32% {
+        text-shadow: none;
+        color: grey;
+    }
+}
+
+
+
+@keyframes plugin {
+    0% {
+        box-shadow: none;
+        color: grey;
+        text-shadow: none;
+    }
+
+    100% {
+        box-shadow:
+            0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem var(--color-green),
+            0 0 0.8rem var(--color-green),
+            0 0 2.8rem var(--color-green),
+            inset 0 0 1rem var(--color-green);
+        color: #fff;
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px var(--color-green),
+            0 0 45px var(--color-green),
+            0 0 55px var(--color-green),
+            0 0 70px var(--color-green),
+            0 0 80px var(--color-green);
+    }
+}

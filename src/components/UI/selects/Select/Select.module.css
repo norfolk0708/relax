@@ -1,0 +1,42 @@
+.box {
+    position: relative;
+    border: 3px solid #448ee2;
+    display: inline-block;
+}
+
+.box select {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 12px;
+    width: 250px;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    appearance: none;
+}
+
+.box::before {
+    content: "▼";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 45px;
+    color: var(--color-black);
+    pointer-events: none;
+    padding-top: 0.3rem;
+}
+
+.box:hover::before {
+    color: var(--color-green);
+    background-color: rgba(26, 9, 173, 0.2);
+    /*content: "▲";*/
+}
+
+.box select option {
+    padding: 30px;
+}

@@ -1,0 +1,20 @@
+.link {
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.image {
+    padding: 2rem;
+    box-shadow: var(--greenShadow);
+    animation: var(--pulsateBorder);
+    animation-delay: 7s;
+    border-radius: 35%;
+}
+
+.link:active {
+    margin-top: -1px;
+}
+
+.link:active+.image {
+    box-shadow: none;
+}
